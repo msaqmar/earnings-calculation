@@ -1,0 +1,70 @@
+<html>
+<head>
+<style media="screen">
+  body{
+    background-color: #01021e;
+    color: white;
+  }
+  h1{
+    text-align: center;
+  }
+
+  .inp{
+    width: 100%;
+    font-size: 100%;
+  }
+  #tg{
+    width:2%;
+    border-radius: 50%;
+  }
+  .calcbtn{
+    background-color: white;
+    color: #01021e;
+    width: 10%;
+    font-size: 100%;
+  }
+  .calcbtn:hover{
+    background-color: lightblue;
+
+  }
+
+
+</style>
+
+<script type="text/javascript">
+
+function myFunction() {
+  document.getElementById('earn').value = ((Number(document.getElementById('ttamt').value)/Number(document.getElementById('ttmbrs').value))*Number(document.getElementById('chnlmbrs').value));
+//  document.getElementById('earn').value = Number(document.getElementById('ttamt').value)+2;
+}
+
+
+
+
+</script>
+</head>
+
+<body>
+  <h1><img src="1.jpg" id="tg">  TELEGRAM EARNINGS CALCULATION</h1><hr>
+  <div class="totalAmount">
+    <h2>Promotion Amount(INR):<input type="text" class="inp" id="ttamt"></h2>
+  </div><br>
+  <div class="totalMembers">
+    <h2>Total Members community:<input type="text" class="inp" id="ttmbrs"></h2>
+  </div><br>
+  <div class="channelMembers">
+    <h2>Channel Members:<input type="text" class="inp" id="chnlmbrs"></h2>
+  </div><br>
+
+  <button type="button" onclick="myFunction()" name="submit" class="calcbtn">Submit</button><hr>
+<br>
+<div class="earnings">
+  <h2>Earnings (INR):<input type="text" class="inp" id="earn"></h2>
+</div>
+
+
+
+
+
+</body>
+</html>
